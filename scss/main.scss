@@ -1,0 +1,11 @@
+@import "./fonts";
+@import "./variables";
+@import "./global";
+@import "./mixin";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./pages/service/block";
+@import "./pages/news/block";
+@import "./pages/contact/block";
