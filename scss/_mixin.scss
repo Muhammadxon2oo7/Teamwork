@@ -1,0 +1,19 @@
+@mixin flex ($c,$ai,$g:0px){
+    display: flex;
+    justify-content: $c;
+    align-items: $ai;
+    flex-wrap: wrap;
+    gap: $g;
+}
+@mixin text($we,$fz,$c){
+    font-weight: $we;
+    font-size: $fz;
+    color: $c;
+}
+@mixin btn($w,$h,$bg){
+    width: $w;
+    height: $h;
+    border: none;
+    outline: none;
+    background-color: $bg;
+}
