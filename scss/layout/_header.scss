@@ -43,6 +43,7 @@ header{
                 top: 40px;
                 background-color:#E2780A ;
                 border-top: 1px solid gray;
+                z-index: 10;
                 ul{
                     width: 100%;
                     @include flex(center,center,0px);

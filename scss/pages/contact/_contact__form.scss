@@ -1,0 +1,212 @@
+.contact__form{
+    width: 100%;
+    margin-top: 79px;
+    background-color: #f5f5f5;
+    background-image: url('../../../img/Contact__form.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    .container{
+        width: 100%;
+        padding-top: 59px;
+        .contact__form__title{
+            width: 100%;
+            margin-bottom: 79px;
+            h2{
+                width: 100%;
+                @include text(400,23px,#000);
+                margin-bottom: 12px;
+                text-align: center;
+            }
+            p{
+                width: 100%;
+                text-align: center;
+                @include text(500,13px,#777)
+            }
+        }
+        .contact__form_wrapper{
+            width: 100%;
+            @include flex(center,center,0px);
+            form{
+                max-width: 319px;
+                @include flex(flex-end,center,0px);
+               
+                margin-bottom: 65px;
+                
+                .name{
+                    width: 153px;
+                    display: block;
+                    margin-right: 12px;
+                    margin-bottom: 17px;
+                    input{
+                        height: 48px;
+                        width: 100%;
+                        @include text(500,18px,#4f4f4f);
+                    
+                    }
+                }
+                .last{
+                    width: 153px;
+                    display: block;
+                    margin-bottom: 17px;
+                
+                    input{
+                        height: 48px;
+                        width: 100%;
+                    }    
+                }
+                .in__email{
+                    width: 100%;
+                    height: 72px;
+                    display: block;
+                    margin-bottom: 17px;
+                    input{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .messages{
+                    width: 100%;
+                    height: 225px;
+                    display: block;
+                    padding-top: 17px;
+                    margin-bottom: 62px;
+                    input{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                label{
+                    margin-top: 17px;
+                    width: 100%;
+                    @include text(500,14px,#4f4f4f);
+                }
+                input{
+                    background-color: #fff;
+                    border: 0.60px solid #cecece;
+                    border-radius: 9px;
+                    margin-top: 5px;
+                    padding-left: 10px;
+                    display: flex;
+                    align-items: flex-start;
+                    div{
+                        display: none;
+                        width: 100%;
+                        height: 100%;
+                        background-color: red
+                    }
+                    
+                }
+                .submit{
+                    width: 100%;
+                    
+                    @include flex(flex-end,center,0px);
+                    input{
+                    @include btn(193px,57px,#DC7000,10px);
+                    @include text(400,16px,#fff);
+                    cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:768px){
+    .contact__form{
+        width: 100%;
+        margin-top: 147px;
+        background-color: #f5f5f5;
+        background-image: url('../../../img/Contact__form.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        .container{
+            width: 100%;
+            padding-top: 54px;
+            .contact__form__title{
+                width: 100%;
+                margin-bottom: 79px;
+                h2{
+                    width: 100%;
+                    @include text(400,30px,#000);
+                    margin-bottom: 12px;
+                    text-align: center;
+                }
+                p{
+                    width: 100%;
+                    text-align: center;
+                    @include text(500,13px,#777)
+                }
+            }
+            .contact__form_wrapper{
+                width: 100%;
+                @include flex(center,center,0px);
+                form{
+                    max-width: 671px;
+                    @include flex(space-between,center,0px);
+                    margin-bottom: 65px;
+                    .name{
+                        width: 322px;
+                        display: block;
+                        margin-right: 12px;
+                        margin-bottom: 17px;
+                        input{
+                            height: 48px;
+                            width: 100%;
+                            @include text(500,18px,#4f4f4f);
+                        
+                        }
+                    }
+                    .last{
+                        width: 322px;
+                        display: block;
+                        margin-bottom: 17px;
+                    
+                        input{
+                            height: 48px;
+                            width: 100%;
+                        }    
+                    }
+                    .in__email{
+                        width: 100%;
+                        height: 72px;
+                        display: block;
+                        margin-bottom: 17px;
+                        input{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .messages{
+                        width: 100%;
+                        height: 225px;
+                        display: block;
+                        padding-top: 17px;
+                        margin-bottom: 62px;
+                        input{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    label{
+                        margin-top: 17px;
+                        width: 100%;
+                        @include text(500,14px,#4f4f4f);
+                    }
+                    input{
+                        background-color: #fff;
+                        border: 0.60px solid #cecece;
+                        border-radius: 9px;
+                        margin-top: 5px;
+                        
+                    }
+                    // .submit{
+                    //     @include btn(193px,57px,#DC7000,10px);
+                    //     @include text(400,16px,#fff);
+                    //     cursor: pointer;
+                    // }
+                }
+            }
+        }
+    } 
+}

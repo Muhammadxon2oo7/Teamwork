@@ -2,7 +2,11 @@
     padding-top: 62px;
     .container{
         width: 100%;
+        @include flex(center,center,0px);
+
         .contact__banner__title{
+            width: 100%;
+            margin-bottom: 87px;
             @include flex(center,center,0px);
             p{
                 width: 100%;
@@ -26,10 +30,132 @@
                 margin-bottom: 13px;
             }
         }
+        .map{
+            max-width: 330px;
+            margin-bottom: 79px;
+            svg{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .contact__banner__bottom{
+            width: 100%;
+            @include flex(unset,center,0px);
+            flex-direction: column-reverse;
+        
+            .one{
+
+                width: 100%;
+                .contact__title{
+                    width: 100%;
+                    @include text(400,16px,#000);
+                    margin-bottom: 18px;
+                    text-align: left;
+                }
+                .contact__icons{
+                    width: 100%;
+                    @include flex(unset,center,16px);
+                
+                    div{
+                        width: 34px;
+                        height: 34px;
+                        background-color: #fff;
+                        border-radius: 100%;
+                        box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+                        @include flex(center,center,0px)
+                    }
+                }
+            }
+            .both{
+                width: 100%;
+                @include flex(unset,center,0px);
+                // flex-direction: column-reverse;
+                .two,.three{
+                    width: 100%;
+                    padding-bottom: 38px;
+                    border-bottom: 0.80px solid #d8d8d8;
+                    margin-bottom: 37px;
+                    a{
+                        width: 100%;
+                        @include flex(unset,center,25px);
+                        @include text(300,17px,#333)
+                    }
+                }
+            }
+        }
+        
     }
 }
 @media only screen and (min-width:768px){
     .contact__banner{
-        
+        padding-top: 84px;
+        .container{
+            .contact__banner__title{
+                width: 100%;
+                p{
+                    br{
+                        display: none;
+                    }
+                }
+                h1{
+                    max-width: 100%;
+                    font-size: 33px;
+                }
+            }
+            .map{
+                max-width: 100%;
+            }
+        }
+    }
+};
+@media only screen and (min-width:1165px){
+    .contact__banner{
+        .container{
+            width: 100%;
+            .contact__banner__bottom{
+                all: unset;
+                width: 100%;
+                @include flex(space-between,center,0px);
+                .one{
+                    height: 102px;
+                    max-width: 285px;
+                    padding-right: 60px;
+                    border-right: 1px solid #c2c2c2;
+                    margin-right: 60px;
+                }
+                .both{
+                    width: auto;
+                    @include flex(space-between,center,0px);
+                    flex-direction: row-reverse;
+                    flex-grow: 1;
+                    .two, .three{
+                        height: 102px;
+                        width: 50%;
+                        border-bottom: none;
+                        // background-color: red;
+                        margin-bottom: 0;
+                        padding: 0;
+                        a{
+                            height: 100%;
+                            @include flex(unset,center,0px);
+                            img{
+                                margin-right: 25px;
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+                    
+                    }
+                    .two{
+                        border-right: 1px solid #c2c2c2;
+                        
+                    }
+                    .three{
+                        width: auto;
+                        @include flex(flex-end,center,0px)
+                    }
+                }
+            }
+        }
     }
 }
