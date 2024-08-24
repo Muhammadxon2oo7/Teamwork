@@ -1,0 +1,45 @@
+.services__section__two{
+    padding-top: 65px;
+    .services__section__two__box{
+        background-color: #F4F4F4;
+        border-radius: 10px;
+        padding: 32px 25px; 
+        @include flex(start,center,30px)
+    }
+    .services__section__two__card{
+        @include flex (start , center ,12px);
+
+        
+        span{
+            @include text (700 , 17px , #0B132A) ;
+            line-height: 30px;
+        }
+        p{
+            @include text (400 , 14px , #4F5665);
+            line-height: 30px;
+        }
+    }
+}
+
+@media only  screen and ( min-width:768px ){
+    .services__section__two{
+        .services__section__two__box{
+        background-color: #ffffff;
+            
+            display: flex;
+            justify-content: space-around;
+            .services__section__two__card{
+                span{
+                    @include text (700,25px,#0B132A)
+                }
+
+            }
+        }
+        .services__section__two__card:nth-child(2){
+            border-left: 2px solid #EEEFF2;
+            border-right: 2px solid #EEEFF2;
+            padding:0 80px;
+            
+        }
+    }
+}
