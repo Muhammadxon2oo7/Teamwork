@@ -20,17 +20,16 @@ body{
 }
 .container{
   max-width: 1440px;
+  padding-left: 23px;
+  padding-right: 24px;
   margin: 0 auto;
 }
-@media only screen and (min-width:375px){
-  .container{
-    max-width: 329px;
-    margin: 0 auto;
-  }
-}
+
 @media only screen and (min-width:992px){
   .container{
-    max-width: 1295px;
+    max-width: 1440px;
+    padding-left: 63px;
+    padding-right: 82px;
     margin: 0 auto;
   }
 }

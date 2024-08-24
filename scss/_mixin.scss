@@ -10,10 +10,11 @@
     font-size: $fz;
     color: $c;
 }
-@mixin btn($w,$h,$bg){
+@mixin btn($w,$h,$bg,$br){
     width: $w;
     height: $h;
     border: none;
     outline: none;
     background-color: $bg;
+    border-radius: $br;
 }
